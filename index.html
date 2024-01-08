@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Calculadora</h2>
+
+  <input type="text" id="display" disabled>
+  
+  <div>
+    <button onclick="limpiar()">C</button>
+    <button onclick="concatenar('7')">7</button>
+    <button onclick="concatenar('8')">8</button>
+    <button onclick="concatenar('9')">9</button>
+    <button onclick="operacion('/')">/</button>
+  </div>
+  
+  <div>
+    <button onclick="concatenar('4')">4</button>
+    <button onclick="concatenar('5')">5</button>
+    <button onclick="concatenar('6')">6</button>
+    <button onclick="operacion('*')">*</button>
+  </div>
+  
+  <div>
+    <button onclick="concatenar('1')">1</button>
+    <button onclick="concatenar('2')">2</button>
+    <button onclick="concatenar('3')">3</button>
+    <button onclick="operacion('-')">-</button>
+  </div>
+  
+  <div>
+    <button onclick="concatenar('0')">0</button>
+    <button onclick="punto()">.</button>
+    <button onclick="calcular()">=</button>
+    <button onclick="operacion('+')">+</button>
+  </div>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>
